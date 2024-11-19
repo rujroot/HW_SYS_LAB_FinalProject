@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="ila_0_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1731996911">
+<GenRun Id="ila_0_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1732000046">
   <File Type="PA-TCL" Name="ila_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="ila_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="ila_0_reports.tcl"/>
@@ -42,6 +42,7 @@
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="UsedInSteps" Val="synth_1_copy_1"/>
         <Attr Name="AutoDcp" Val="1"/>
       </FileInfo>
     </File>

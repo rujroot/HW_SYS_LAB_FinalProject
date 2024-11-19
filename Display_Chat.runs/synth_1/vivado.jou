@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Nov 19 13:38:59 2024
-# Process ID: 31608
+# Start of session at: Tue Nov 19 14:58:40 2024
+# Process ID: 39176
 # Current directory: D:/Chula/HW_SYS_LAB/Display_Chat/Display_Chat.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: D:/Chula/HW_SYS_LAB/Display_Chat/Display_Chat.runs/synth_1/top.vds
@@ -19,6 +19,6 @@
 # Host memory       :25598 MB
 # Swap memory       :4831 MB
 # Total Virtual     :30430 MB
-# Available Virtual :13641 MB
+# Available Virtual :12379 MB
 #-----------------------------------------------------------
 source top.tcl -notrace

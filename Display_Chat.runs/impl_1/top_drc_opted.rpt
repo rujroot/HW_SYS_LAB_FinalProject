@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Tue Nov 19 13:40:26 2024
+| Date         : Tue Nov 19 15:00:05 2024
 | Host         : LAPTOP-EDVFM2MF running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
 | Design       : top
@@ -24,12 +24,13 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 2
+             Violations found: 7
 +-------------+----------+-------------------------------------------------------------+------------+
 | Rule        | Severity | Description                                                 | Violations |
 +-------------+----------+-------------------------------------------------------------+------------+
 | CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
-| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 2          |
+| REQP-1840   | Warning  | RAMB18 async control check                                  | 4          |
 +-------------+----------+-------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -49,13 +50,41 @@ Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT vga/h_count_next[9]_i_2 is driving clock pin of 20 cells. This could lead to large hold time violations. Involved cells are:
+A LUT vga/p_tick_INST_0 is driving clock pin of 20 cells. This could lead to large hold time violations. Involved cells are:
 vga/h_count_next_reg[0], vga/h_count_next_reg[1], vga/h_count_next_reg[2],
 vga/h_count_next_reg[3], vga/h_count_next_reg[4], vga/h_count_next_reg[5],
 vga/h_count_next_reg[6], vga/h_count_next_reg[7], vga/h_count_next_reg[8],
 vga/h_count_next_reg[9], vga/v_count_next_reg[0], vga/v_count_next_reg[1],
 vga/v_count_next_reg[2], vga/v_count_next_reg[3], vga/v_count_next_reg[4]
  (the first 15 of 20 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT xw[6]_i_3 is driving clock pin of 14 cells. This could lead to large hold time violations. Involved cells are:
+mem_reg[0][0], mem_reg[0][1], mem_reg[0][2], mem_reg[0][3], mem_reg[0][4],
+mem_reg[0][5], mem_reg[0][6], xw_reg[0], xw_reg[1], xw_reg[2], xw_reg[3],
+xw_reg[4], xw_reg[5], xw_reg[6]
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 at/rom/addr_reg_reg has an input control pin at/rom/addr_reg_reg/ADDRARDADDR[3] (net: at/rom/addr[0]) which is driven by a register (vga/v_count_reg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 at/rom/addr_reg_reg has an input control pin at/rom/addr_reg_reg/ADDRARDADDR[4] (net: at/rom/addr[1]) which is driven by a register (vga/v_count_reg_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 at/rom/addr_reg_reg has an input control pin at/rom/addr_reg_reg/ADDRARDADDR[5] (net: at/rom/addr[2]) which is driven by a register (vga/v_count_reg_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#4 Warning
+RAMB18 async control check  
+The RAMB18E1 at/rom/addr_reg_reg has an input control pin at/rom/addr_reg_reg/ADDRARDADDR[6] (net: at/rom/addr[3]) which is driven by a register (vga/v_count_reg_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 
