@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Rujroot" Host="LAPTOP-EDVFM2MF" Pid="25740" HostCore="8" HostMemory="025598894080">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Rujroot" Host="LAPTOP-EDVFM2MF" Pid="2388" HostCore="8" HostMemory="025598894080">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Rujroot" Host="LAPTOP-EDVFM2MF" Pid="2372" HostCore="8" HostMemory="025598894080">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Rujroot" Host="LAPTOP-EDVFM2MF" Pid="28004" HostCore="8" HostMemory="025598894080">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Rujroot" Host="LAPTOP-EDVFM2MF" Pid="31388" HostCore="8" HostMemory="025598894080">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Rujroot" Host="LAPTOP-EDVFM2MF" Pid="14488" HostCore="8" HostMemory="025598894080">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Rujroot" Host="LAPTOP-EDVFM2MF" Pid="15120" HostCore="8" HostMemory="025598894080">
+    </Process>
+</ProcessHandle>
