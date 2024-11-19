@@ -9,7 +9,10 @@ module top(
     output vsync,       // to VGA connector
     output [11:0] rgb   // to DAC, to VGA connector
     );
-    
+//    ila_0 ila_0_inst (
+//        .clk(clk),
+//        .probe0(test)
+//    );
     // signals
     wire [9:0] w_x, w_y;
     wire w_video_on, w_p_tick;
@@ -22,6 +25,7 @@ module top(
     // Text Generation Circuit
     ascii_test at(.clk(clk), .video_on(w_video_on), .x(w_x), .y(w_y), .ascii_char(mem[w_x[9:3]]), .rgb(rgb_next));
     
+    
     reg [6:0] mem [127:0];
     
     reg [6:0] xw;
@@ -31,14 +35,18 @@ module top(
         xw = 0;
     end
     
+    reg [6:0] test;
+
     always @(posedge btnU) begin
         mem[xw] = sw[6:0];
+        test = sw[6:0];
         if (xw == 32) begin
             xw = 0;
         end
         else begin
             xw = xw + 1;
         end
+        $display ("%d %d %d", test, xw, mem[xw]);
        
     end
     
